@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
+/* eslint-disable max-classes-per-file */
 class Human {
     constructor(type = 'human') {
         this.type = type;
@@ -8,7 +11,7 @@ class Human {
     }
 
     breathe() {
-        alert('ahahah');
+        alert(`ahahah${this.type}`);
     }
 }
 
@@ -29,4 +32,4 @@ const newZero = new Zero('human', 'Zero', 'Cho');
 
 const result = Human.isHuman(newZero);
 
-console.log(result)
+console.log(result);

@@ -1,3 +1,5 @@
+/* eslint-disable prefer-promise-reject-errors */
+/* eslint-disable no-console */
 const condition = true;
 const promise = new Promise((resolve, reject) => {
     if (condition) {
@@ -16,4 +18,4 @@ promise
     })
     .finally(() => {
         console.log('무조건');
-    })
+    });
